@@ -204,6 +204,26 @@ body {
 .green {
   background-color: #26A65B;
 }
+.light-brown {
+  background-color: #E4BA79;
+  color: white;
+}
+.gold {
+  background-color: #F8C71C;
+  color: white;
+}
+.light-green {
+  background-color: #BAE98A;
+  color: #333;
+}
+.purple {
+  background-color: #9013FE;
+  color: #fff;
+}
+.off-white {
+  background-color: #FFFAC2;
+  color: #333;
+}
 #food-list > div {
   margin-top: 20px;
 }
