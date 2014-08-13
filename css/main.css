@@ -42,7 +42,7 @@ body {
 #sidebar {
   width: 70px;
   height: auto;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   top: 62px;
