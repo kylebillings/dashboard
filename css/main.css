@@ -1,0 +1,278 @@
+body {
+  font-family: "Lato", "Helvetica Neue", Arial, Sans-Serif;
+  background: #f6f6f6;
+}
+#header {
+  height: 62px;
+  background: #fff;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+#header .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#header.header-fixed {
+  position: fixed;
+}
+#header .navbar {
+  height: 62px;
+  margin-bottom: 0;
+  padding-right: 20px;
+  background: #fff;
+  border-radius: 0;
+  border-bottom: 1px solid #ECF0F1;
+}
+#header .navbar .logo {
+  width: 45px;
+  margin: 10px;
+}
+.profile-image {
+  border-radius: 1000px;
+  width: 80px;
+  position: fixed;
+  left: 49%;
+  right: 51%;
+  top: 15px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+}
+#sidebar {
+  width: 70px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 62px;
+  z-index: 2;
+  color: white;
+  text-align: center
+}
+.sidebar-icon {
+  margin: auto;
+  font-size: 18;
+  width: 60px;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+.sidebar-icon img {
+  margin: auto;
+  width: 30px;
+  display: block;
+}
+#sidebar .current {
+  background-color: #555;
+}
+#sidebar:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  background: #333;
+  border-right: 1px solid #ffffff;
+  z-index: -1;
+}
+#diet-content {
+  padding: 62px 0px 0px 70px;
+}
+#diet-content > .container-fluid {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+#dietary-objective {
+  text-align: center;
+  padding-top: 40px;
+  color: #BDC3C7;
+}
+#dietary-objective h1 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 48px;
+}
+#dietary-objective h4 {
+  margin-bottom: 0px;
+}
+#dietary-objective a {
+  color: #BDC3C7;
+  text-decoration: underline;
+}
+#dietary-objective a:hover {
+  color: #663399;
+}
+.white-bg {
+  background-color: #fcfcfc;
+  border-radius: 4px;
+}
+.progress {
+  margin-top: 25px;
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.progress-first-thrid {
+  background-color: #000;
+  border-radius: 4px 0;
+}
+
+.progress-second-thrid {
+  background-color: #000;
+  border-radius: 4px 0;
+}
+.progress-third-thrid {
+  background-color: #000;
+  border-radius: 4px 0;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #428bca;
+}
+.progress-striped .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+.progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-bar-success {
+  background-color: #d9534f;
+}
+.progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-info {
+  background-color: #d9534f;
+}
+.progress-striped .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-warning {
+  background-color: #f0ad4e;
+}
+.progress-striped .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-danger {
+  background-color: #F4D03F;
+}
+.progress-striped .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.title {
+  height: 28px;
+  width: 120px;
+  font-size: 20px;
+  text-align: center;
+}
+.red {
+  background-color: #d9534f;
+  color: #fff;
+}
+.gray {
+  background-color: #ECF0F1;
+  color: #fff;
+}
+.green {
+  background-color: #26A65B;
+}
+#food-list > div {
+  margin-top: 20px;
+}
+.food-item {
+  height: 60px;
+  border-bottom: 1px solid #ABB7B7;
+}
+.food-item span {
+  font-size: 20px;
+  margin-left: 40px;
+  line-height: 60px;
+  display:inline-block; 
+  vertical-align:middle
+}
+#cd-nav ul {
+  /* mobile first */
+  position: fixed;
+  width: 90%;
+  max-width: 400px;
+  right: 5%;
+  bottom: 20px;
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 1;
+ 
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: transform 0.3s, visibility 0s 0.3s;
+}
+ 
+#cd-nav ul.is-visible {
+  visibility: visible;
+  transform: scale(1);
+  transition: transform 0.3s, visibility 0s 0s;
+}
+ 
+.cd-nav-trigger {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  width: 44px;
+  height: 44px;
+  
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  z-index: 2;
+}
+@media only screen and (min-width: 1170px) {
+  #cd-nav ul {
+    /* the navigation moves to the top */
+    position: absolute;
+    width: auto;
+    max-width: none;
+    bottom: auto;
+    top: 36px;
+    visibility: visible;
+    transform: scale(1);
+    transition: all 0s;
+  }
+ 
+  #cd-nav.is-fixed ul {
+    position: fixed;
+    width: 90%;
+    max-width: 400px;
+    bottom: 20px;
+    top: auto;
+    visibility: hidden;
+    transform: scale(0);
+  }
+}
