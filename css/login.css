@@ -60,6 +60,10 @@ input {
 }
 #create-account {
   width: 110px;
+  background-color: #D8D8D8;
+}
+#create-account:hover {
+  background-color: #BBB;
 }
 #login-email {
   width: 110px;
