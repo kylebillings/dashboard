@@ -9,10 +9,13 @@ body {
 }
 #login {
   margin: auto;
-  margin-top: 100px;
-  width: 260px;
-  height: 350px;
-  padding: 10px;
+  margin-top: 50px;
+  width: 480px;
+  height: 480px;
+  padding: 20px 40px;
+}
+#login h4 {
+  margin-bottom: 30px;
 }
 #secured {
   margin: auto;
@@ -26,47 +29,42 @@ body {
 }
 .forgot {
   margin: auto;
-  width: 220px;
+  width: 400px;
   text-align: right;
 }
 .forgot a {
   font-size: 10px;
 }
-button {
+.btn {
   background-color: #50E3C2;
   border: none;
   color: white;
   border-radius: 2px;
-  height: 30px;
+  height: 50px;
+  font-size: 18px;
 }
-button:hover {
+.btn:hover {
   background-color: #1DC6A0;
 }
-label {
-  font-size: 8px;
-  display: block;
-  margin: 15px 0px 0px 10px;
+.form-group {
   text-align: left;
-}
-input {
-  width: 220px;
 }
 .password {
   float: right;
   font-size: 10px;
 }
-#login-api {
+.btn-23 {
   width: 220px;
 }
-#create-account {
-  width: 110px;
+.btn-create-account {
+  width: 190px;
   background-color: #D8D8D8;
 }
-#create-account:hover {
+.btn-create-account:hover {
   background-color: #BBB;
 }
-#login-email {
-  width: 110px;
+.btn-login-email {
+  width: 190px;
 }
 .logins {
   margin-top: 20px;
