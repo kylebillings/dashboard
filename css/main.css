@@ -7,6 +7,16 @@ body {
   height: 350px;
   margin: auto;
 }
+#buggy {
+  background: #fff;
+  z-index: 999;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #ECF0F1;
+}
 #header {
   height: 45px;
   background: #fff;
@@ -85,7 +95,7 @@ body {
   z-index: -1;
 }
 #diet-content {
-  padding: 62px 0px 0px 50px;
+  padding: 62px 0px 60px 50px;
 }
 #diet-content > .container-fluid {
   margin-left: 10px;

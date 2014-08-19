@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="shepherd-theme-arrows.css" />
 </head>
 <body>
+	<div id="buggy">
+		<p>We are currently testing. Please email us at <a href="mailto:help@geneguru.me">help@geneguru.me</a> to report issues.</p>
+	</div>
 	<div id="header" class="header-fixed">
 		<div class="container-fluid">
 			<div class="navbar">
@@ -249,27 +252,13 @@
 			</div>
 		</div>
 	</div>
-<script>
-tour = new Shepherd.Tour
-  defaults:
-    classes: 'shepherd-theme-arrows'
-
-tour.addStep 'example',
-  title: 'Example Shepherd'
-  text: 'Creating a Shepherd is easy too! Just create ...'
-  attachTo: '.hero-example bottom'
-  advanceOn: '.docs-link click'
-
-tour.start()
-</script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
 <script>
 $('.food-item').on('click', function (e) {
 	e.preventDefault();
 	$(this).toggleClass("opened", 300, 'easeInOutCubic');
 });
 </script>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-<script src="shepherd.min.js"></script>
 </body>
 </html>

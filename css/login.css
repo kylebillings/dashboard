@@ -7,9 +7,12 @@ body {
    background-size: cover;
   text-align: center;
 }
+.errorText {
+  color: red;
+}
 #login {
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 480px;
   padding: 20px 40px;
 }
@@ -74,14 +77,15 @@ body {
 .logins {
   margin-top: 20px;
 }
-.profile-image {
-  border-radius: 1000px;
-  width: 80px;
+#buggy {
+  background: #fff;
+  z-index: 999;
+  text-align: center;
+  padding: 5px;
   position: fixed;
-  left: 48%;
-  top: 10px;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
-          box-shadow: 0 2px 2px rgba(0, 0, 0, .35);
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #ECF0F1;
 }
 #sidebar {
   width: 55px;
