@@ -13,7 +13,7 @@
 		<div id="login" class="white-bg">
 			<img class="logo" src="images/logo.png">
 			<h4>Log in to your Dashboard</h4>
-			<button class="btn btn-23">Sign up with 23andMe</button>
+			<button class="btn btn-23 btn-block">Sign up with 23andMe</button>
 			<hr/>
 			<form action="">
 				<div class="form-group">
@@ -25,11 +25,17 @@
 					<input type="password" class="form-control">
 				</div>
 				<div class="forgot">
-					<a href="#">Forgot Your Password?</a>
+					<a tabindex="-1" href="#">Forgot Your Password?</a>
 				</div>
 				<div class="logins">
-				<input type="submit" value="Create Account" class="btn btn-create-account">
-				<input type="submit" value="Log in" class="btn btn-login-email">
+				<div class="row button-stack">
+					<div class="col-md-6">
+						<input type="submit" value="Create Account" class="btn btn-create-account btn-block" disabled>
+					</div>
+					<div class="col-md-6">
+						<input type="submit" value="Log in" class="btn btn-login-email btn-block">
+					</div>
+				</div>
 				</div>
 			</form>
 	</div>

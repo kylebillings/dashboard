@@ -11,8 +11,13 @@ body {
   margin: auto;
   margin-top: 10%;
   width: 480px;
-  height: 480px;
   padding: 20px 40px;
+}
+@media (max-width: 480px) {
+  #login {
+    width: auto;
+    padding: 10px;
+  }
 }
 #login h4 {
   margin-bottom: 30px;
@@ -29,7 +34,6 @@ body {
 }
 .forgot {
   margin: auto;
-  width: 400px;
   text-align: right;
 }
 .forgot a {
@@ -45,6 +49,7 @@ body {
 }
 .btn:hover {
   background-color: #1DC6A0;
+  color: #fff;
 }
 .form-group {
   text-align: left;
@@ -53,19 +58,19 @@ body {
   float: right;
   font-size: 10px;
 }
-.btn-23 {
-  width: 220px;
-}
 .btn-create-account {
-  width: 190px;
   background-color: #D8D8D8;
 }
 .btn-create-account:hover {
   background-color: #BBB;
 }
 .btn-login-email {
-  width: 190px;
 }
+
+.button-stack .btn:first-child {
+  margin-bottom: 10px;
+}
+
 .logins {
   margin-top: 20px;
 }
@@ -271,36 +276,12 @@ body {
 .opened > .more-info {
   display: block;
 }
-.animated {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
+@media (max-width: 600px) {
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
   }
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
 @media only screen and (max-width: 480px){
   #diet-content > .container-fluid {
   margin-left: 0px;
