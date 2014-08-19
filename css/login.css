@@ -1,39 +1,71 @@
 body {
   font-family: "Lato", "Helvetica Neue", Arial, Sans-Serif;
-  background: #f6f6f6;
+  background: url('../images/low-poly-bg.jpg') no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  text-align: center;
 }
 #login {
+  margin: auto;
+  margin-top: 100px;
   width: 260px;
   height: 350px;
+  padding: 10px;
+}
+#secured {
   margin: auto;
+  width: 260px;
+  font-size: 11px;
+  margin-top: 10px;
+  color: white;
 }
-#header {
-  height: 45px;
-  background: #fff;
-  z-index: 999;
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
-#header .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-#header.header-fixed {
-  position: fixed;
-}
-#header .navbar {
-  height: 45px;
-  margin-bottom: 0;
-  padding-right: 20px;
-  background: #fff;
-  border-radius: 0;
-  border-bottom: 1px solid #ECF0F1;
-}
-#header .navbar .logo {
+.logo {
   width: 40px;
-  margin: 5px;
-  margin-left: 7px;
+}
+.forgot {
+  margin: auto;
+  width: 220px;
+  text-align: right;
+}
+.forgot a {
+  font-size: 10px;
+}
+button {
+  background-color: #50E3C2;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  height: 30px;
+}
+button:hover {
+  background-color: #1DC6A0;
+}
+label {
+  font-size: 8px;
+  display: block;
+  margin: 15px 0px 0px 10px;
+  text-align: left;
+}
+input {
+  width: 220px;
+}
+.password {
+  float: right;
+  font-size: 10px;
+}
+#login-api {
+  width: 220px;
+}
+#create-account {
+  width: 110px;
+}
+#login-email {
+  width: 110px;
+}
+.logins {
+  margin-top: 20px;
 }
 .profile-image {
   border-radius: 1000px;
