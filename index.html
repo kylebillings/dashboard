@@ -79,31 +79,31 @@
 						<div class="title red">Protein</div>
 					</div>
 					<div class="food-item">
-						<span class="food-link">Atlantic Cod</span>
+						<span>Atlantic Cod</span>
 						<div class="more-info">
 							<p>We recommend almond due to your <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">carbohydrate digestion</a>, <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevent Genes" data-content="GSK3B | MGAM">facilitative glucose transport</a>, and <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">sodium glucose transporter</a>. </p>
 						</div>
 						</div>
 					<div class="food-item">
-						<span class="food-link">Grass Fed Beef</span>
+						<span>Grass Fed Beef</span>
 						<div class="more-info">
 							<p>We recommend almond due to your <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">carbohydrate digestion</a>, <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevent Genes" data-content="GSK3B | MGAM">facilitative glucose transport</a>, and <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM | Third">sodium glucose transporter</a>. </p>
 						</div>
 					</div>
 					<div class="food-item">
-						<span class="food-link">Pork</span>
+						<span>Pork</span>
 						<div class="more-info">
 							<p>We recommend almond due to your <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">carbohydrate digestion</a>, <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevent Genes" data-content="GSK3B | MGAM">facilitative glucose transport</a>, and <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">sodium glucose transporter</a>. </p>
 						</div>
 					</div>
 					<div class="food-item">
-						<span class="food-link">Alaskan Salmon</span>
+						<span>Alaskan Salmon</span>
 						<div class="more-info">
 							<p>We recommend almond due to your <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">carbohydrate digestion</a>, <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevent Genes" data-content="GSK3B | MGAM">facilitative glucose transport</a>, and <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">sodium glucose transporter</a>. </p>
 						</div>
 					</div>
 					<div class="food-item">
-						<span class="food-link">Scallops</span>
+						<span>Scallops</span>
 						<div class="more-info">
 							<p>We recommend almond due to your <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">carbohydrate digestion</a>, <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevent Genes" data-content="GSK3B | MGAM">facilitative glucose transport</a>, and <a data-toggle="popover" data-placement="top" data-trigger="hover" title="Relevant Genes" data-content="GSK3B | MGAM">sodium glucose transporter</a>. </p>
 						</div>
@@ -266,9 +266,9 @@
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-$('.food-link').on('click', function (e) {
+$('.food-item').on('click', function (e) {
 	e.preventDefault();
-	$(this).parent().toggleClass("opened", 300, 'easeInOutCubic');
+	$(this).toggleClass("opened", 300, 'easeInOutCubic');
 });
 </script>
 <script>
