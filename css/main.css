@@ -337,7 +337,6 @@ body {
 }
 .more-info a:hover {
   text-decoration: none;
-  cursor: pointer;
 }
 .more-info a:focus {
   outline: none;
