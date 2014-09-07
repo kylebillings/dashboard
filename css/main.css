@@ -302,7 +302,7 @@ body {
   font-size: 20px;
   margin-left: 10px;
   line-height: 60px;
-  display:inline-block; 
+  display:block; 
   vertical-align:middle
 }
 }
@@ -328,7 +328,12 @@ body {
   font-size: 16px;
 }
 .more-info a {
-  color: #d9534f;
+  padding: 2px;
+  margin-left: -2px;
+  margin-right: -2px;
+  border-radius: 4px;
+  background-color: #d9534f;
+  color: #fff;
 }
 .more-info a:hover {
   text-decoration: none;
