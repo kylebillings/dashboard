@@ -78,14 +78,17 @@ body {
   margin-top: 20px;
 }
 #buggy {
-  background: #fff;
+  background: #7746C1;
   z-index: 999;
+  color: #fff;
   text-align: center;
   padding: 5px;
   position: fixed;
   width: 100%;
   bottom: 0;
-  border-top: 1px solid #ECF0F1;
+}
+#buggy p {
+  margin-bottom: 0px;
 }
 #sidebar {
   width: 55px;

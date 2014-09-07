@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gene Guru Dashboard</title>
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,500' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="shepherd-theme-arrows.css" />
@@ -17,7 +17,7 @@
 		<div class="container-fluid">
 			<div class="navbar">
 				<img src="images/logo.png" alt="" class="logo"/>
-				<img src="images/pic-t2.jpg" alt="" class="profile-image">
+				<img src="images/profile-icon.png" alt="" class="profile-image">
 			</div>
 		</div>
 	</div>
@@ -79,9 +79,12 @@
 						<div class="title red">Protein</div>
 					</div>
 					<div class="food-item">
-						<span>Atlantic Cod</span>
-						<div class="more-info">Based on my FIRST, SECOND, and THIRD genes.</div>
-					</div>
+						<span class="food-link">Atlantic Cod</span>
+						<div class="more-info">
+							<p>We recommend almond due to your <a tabindex="0" data-toggle="popover" data-placement="top" data-trigger="focus" title="Relevant Genes" data-content="GSK3B | MGAM">carbohydrate digestion</a>, <a tabindex="0" data-toggle="popover" data-placement="top" data-trigger="focus" title="Relevent Genes" data-content="GSK3B | MGAM">facilitative glucose transport</a>, and <a tabindex="0" data-toggle="popover" data-placement="top" data-trigger="focus" title="Relevant Genes" data-content="GSK3B | MGAM">sodium glucose transporter</a>. </p>
+
+							</div>
+						</div>
 					<div class="food-item">
 						<span>Grass Fed Beef</span>
 						<div class="more-info">Based on my FIRST, SECOND, and THIRD genes.</div>
@@ -254,11 +257,15 @@
 	</div>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
-$('.food-item').on('click', function (e) {
+$('.food-link').on('click', function (e) {
 	e.preventDefault();
-	$(this).toggleClass("opened", 300, 'easeInOutCubic');
+	$(this).parent().toggleClass("opened", 300, 'easeInOutCubic');
 });
+</script>
+<script>
+	$(function () { $("[data-toggle='popover']").popover(); });
 </script>
 </body>
 </html>

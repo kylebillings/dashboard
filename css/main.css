@@ -8,14 +8,17 @@ body {
   margin: auto;
 }
 #buggy {
-  background: #fff;
+  background: #7746C1;
+  color: #fff;
   z-index: 999;
   text-align: center;
   padding: 5px;
   position: fixed;
   width: 100%;
   bottom: 0;
-  border-top: 1px solid #ECF0F1;
+}
+#buggy p {
+  margin-bottom: 0px;
 }
 #header {
   height: 45px;
@@ -241,10 +244,10 @@ body {
 .more-info {
   display: none;
   margin-left: 40px;
+  padding-bottom: 15px;
   font-size: 14px;
 }
 .opened {
-  height: 120px;
 }
 .opened > .more-info {
   display: block;
@@ -304,3 +307,35 @@ body {
 }
 }
 }
+
+.more-info > .btn-group {
+  position: fixed;
+  display: none !important;
+}
+
+.popover {
+  border-radius: 4px;
+}
+.popover-title {
+  text-align: center;
+}
+.popover-content {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+.more-info p {
+  font-size: 16px;
+}
+.more-info a {
+  color: #d9534f;
+}
+.more-info a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.more-info a:focus {
+  outline: none;
+}
+
+
